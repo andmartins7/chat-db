@@ -1,4 +1,7 @@
-# chat-db
+# CHAT-DB - Converse com o seu Banco de Dados
+
+![image](https://github.com/andmartins7/chat-db/assets/128826621/d979d3a7-b79b-477b-94b7-7c99694e3c2c)
+
 
 # Descrição do Projeto
 Este projeto é uma aplicação Python que demonstra a integração de várias tecnologias, incluindo AWS Athena, Azure OpenAI, e o uso de um agente SQL para processar consultas em linguagem natural e convertê-las em SQL. A aplicação utiliza variáveis de ambiente para gerenciar informações sensíveis e oferece uma interface para executar consultas em linguagem natural que são traduzidas em consultas SQL.
