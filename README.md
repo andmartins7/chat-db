@@ -38,3 +38,4 @@ Este projeto é uma aplicação Python que demonstra a integração de várias t
 - Acesso ao AWS Athena com credenciais válidas.
 - Acesso ao Azure OpenAI com chave de API válida.
 - Um arquivo .env configurado com todas as variáveis de ambiente necessárias.
+- A variável de ambiente `ATHENA_WORK_GROUP` deve especificar o nome do work group do Athena.

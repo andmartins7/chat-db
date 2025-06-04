@@ -19,6 +19,7 @@ required_vars = [
     "S3_LOCATION",
     "AWS_USER",
     "AWS_DB_PASSWORD",
+    "ATHENA_WORK_GROUP",
 ]
 missing = [var for var in required_vars if not os.getenv(var)]
 if missing:
@@ -35,13 +36,14 @@ region = os.environ.get('AWS_REGION')
 s3_location = os.environ.get('S3_LOCATION')
 user = os.environ.get('AWS_USER')
 password = os.environ.get('AWS_DB_PASSWORD')
+work_group = os.environ.get('ATHENA_WORK_GROUP')
 # openai_api_key = os.environ.get('OPENAI_API_KEY')
 athena_db_uri = (
     f"awsathena+rest://{user}:{password}@athena.{region}.amazonaws.com:443/"
     "caminho_para_o_banco_de_dados_especifico_no_Athena_que_você_"
     "deseja_acessar"
     f"?s3_staging_dir={s3_location}/athenaresults/"
-    f"&work_group=grupo_de_trabalho"
+    f"&work_group={work_group}"
 )
 
 # Conexão com o Athena
