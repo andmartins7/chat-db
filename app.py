@@ -64,7 +64,7 @@ agent_executor = create_sql_agent(
     llm=llm,
     toolkit=toolkit,
     verbose=True,
-    agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION  # Use OPENAI_FUNCS
+    agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION  # Ou AgentType.OPENAI_FUNCTIONS
 )
 
 # Processar consulta em linguagem natural e gerar SQL
